@@ -1,0 +1,18 @@
+@use "space" as *;
+@use "fonts" as *;
+
+
+.summary{
+    margin:$section-space ;
+    &__title{
+        font-size: $font-section-title;
+        margin:0 0 $section-title-space;
+    }
+    &__list{
+        font-size: $font-section-items;
+    }
+    &__item{
+                margin: 0 0 $section-items-space 0;
+
+    }
+}
