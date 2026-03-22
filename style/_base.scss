@@ -1,5 +1,10 @@
 @use "colors";
+@font-face {
+  font-family: "samsungsharpsansbold";
+  src:
 
+    url("../assets/font/samsungsharpsans-bold.otf") ;
+}
 
 * {
   margin: 0;
@@ -14,7 +19,7 @@ html{
 
 body {
   background-repeat: no-repeat;
-  font-family: "Lato", sans-serif;
+  font-family: "samsungsharpsansbold", sans-serif;
 }
 
 .container {
