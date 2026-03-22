@@ -61,3 +61,19 @@ body {
 .info__icon + a {
   margin-left: 5px;
 }
+
+.summary {
+  margin: 2rem;
+}
+.summary__title {
+  font-size: 3.2rem;
+  margin: 0 0 1rem;
+}
+.summary__list {
+  font-size: 1.5rem;
+  margin: 0 4rem;
+}
+.summary__item {
+  margin: 0 0 0.5rem 0;
+  line-height: 2.1rem;
+}

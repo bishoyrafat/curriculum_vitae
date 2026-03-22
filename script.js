@@ -1,3 +1,7 @@
+"use strict";
+const infoContainer = document.querySelector(".info__container");
+const summaryList = document.querySelector(".summary__list");
+
 const infoData = [
   {
     class: "location",
@@ -31,7 +35,10 @@ const infoData = [
   },
 ];
 
-const infoContainer = document.querySelector(".info__container");
+const summaryData = [
+  "Front-End Developer with 3+ years of experience specializing in Angular, delivering scalable andhigh-performance web applications. Strong background in modern UI development, componentbased architecture, and collaborating in Agile environments",
+  "Currently pursuing a Master’s degree in Informatics in Prague and seeking a Front-End Developer rolewhere I can contribute to building efficient, user-focused interfaces while continuing to growtechnically. Available to start immediately",
+];
 
 infoData.forEach((el) => {
   console.log("info__box--" + el.class);
@@ -45,4 +52,11 @@ infoData.forEach((el) => {
 `;
 
   infoContainer.insertAdjacentHTML("beforeend", infoHtml);
+});
+
+summaryData.forEach((item) => {
+  const listItem = document.createElement("li");
+  listItem.classList.add("summary__item");
+  listItem.innerText = item;
+  summaryList.appendChild(listItem);
 });

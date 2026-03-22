@@ -12,10 +12,12 @@
 
     &__list {
         font-size: $font-section-items;
+        margin: 0 $section-items-margin;
     }
 
     &__item {
         margin: 0 0 $section-items-space 0;
+        line-height: $text-itmes-line-hieght;
 
     }
 }
